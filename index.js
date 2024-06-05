@@ -2,7 +2,7 @@ const http = require("http")
 const Socket = require("websocket").server
 const server = http.createServer(() => { })
 
-const PORT = 3000
+const PORT = process.env.PORT || 4000
 
 server.listen(PORT, () => {
     console.log(`Server Running At ${PORT}`)
